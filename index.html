@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Art - IT Təhlükəsizlik və Konsultasiya Xidmətləri | Kibertehlükəsizlik</title>
+    <meta name="description" content="Secure Art - Azərbaycanda aparıcı IT təhlükəsizlik şirkəti. Kibertehlükəsizlik, audit və konsultasiya xidmətləri ilə biznesinizi rəqəmsal təhdidlərdən qoruyuruq. 24/7 dəstək." />
+    <meta name="keywords" content="kibertehlükəsizlik, IT təhlükəsizlik, audit xidmətləri, IT konsultasiya, Azərbaycan, Bakı, firewall, antivirus, DDoS müdafiəsi" />
+    <meta name="author" content="Secure Art" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://secureart.az" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://secureart.az" />
+    <meta property="og:title" content="Secure Art - IT Təhlükəsizlik və Kibertehlükəsizlik Xidmətləri" />
+    <meta property="og:description" content="Peşəkar IT təhlükəsizlik həlləri və kibertehlükəsizlik xidmətləri. Biznesinizi rəqəmsal təhdidlərdən qoruyuruq." />
+    <meta property="og:image" content="https://secureart.az/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://secureart.az" />
+    <meta property="twitter:title" content="Secure Art - IT Təhlükəsizlik Xidmətləri" />
+    <meta property="twitter:description" content="Azərbaycanda aparıcı IT təhlükəsizlik şirkəti. 24/7 dəstək və peşəkar həllər." />
+    <meta property="twitter:image" content="https://secureart.az/og-image.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-fixed">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <span class="logo-text">Secure Art</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="#home" class="nav-link">Əsas</a>
+                    <a href="#services" class="nav-link">Xidmətlər</a>
+                    <a href="#about" class="nav-link">Haqqımızda</a>
+                    <a href="#contact" class="nav-link">Əlaqə</a>
+                </div>
+
+                <!-- Desktop CTA -->
+                <div class="desktop-nav">
+                    <button class="btn btn-cyber btn-sm">Konsultasiya</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="mobile-nav">
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i data-lucide="menu" id="menuIcon"></i>
+                        <i data-lucide="x" id="closeIcon" style="display: none;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <a href="#home" class="mobile-nav-link">Əsas</a>
+                    <a href="#services" class="mobile-nav-link">Xidmətlər</a>
+                    <a href="#about" class="mobile-nav-link">Haqqımızda</a>
+                    <a href="#contact" class="mobile-nav-link">Əlaqə</a>
+                    <div class="mobile-cta">
+                        <button class="btn btn-cyber btn-sm btn-full">Konsultasiya</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">  <canvas id="hero-canvas"></canvas>
+        <div class="hero-overlay"></div>
+        
+        <!-- Floating elements -->
+        <div class="floating-element floating-1"></div>
+        <div class="floating-element floating-2"></div>
+        <div class="floating-element floating-3"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <!-- Main heading -->
+                <h1 class="hero-title">
+                    <span class="title-normal"> </span>
+                    <span class="title-neon cyan"></span>
+                    <br />
+                    <span class="title-normal"> </span>
+                    <span class="title-neon purple"> </span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="hero-subtitle">
+                    
+                    <br />
+                    
+                </p>
+
+                <!-- Feature highlights -->
+               <br /><br /><br /><br /><br /><br /><br /><br />
+		 <div class="hero-features">
+                    <div class="feature-item cyan">
+                        <i data-lucide="shield"></i>
+                        <span>Kibertehlükəsizlik</span>
+                    </div>
+                    <div class="feature-item purple">
+                        <i data-lucide="zap"></i>
+                        <span>IT Konsultasiya</span>
+                    </div>
+                    <div class="feature-item blue">
+                        <i data-lucide="lock"></i>
+                        <span>Təhlükəsizlik Auditi</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta">
+                    <button class="btn btn-cyber btn-lg">
+                        Xidmətlərimiz
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <button class="btn btn-ghost-cyber btn-lg">
+                        Pulsuz Konsultasiya
+                    </button> 
+                </div> 
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-normal">Bizim </span>
+                    <span class="title-neon cyan">Xidmətlərimiz</span>
+                </h2>
+                <p class="section-subtitle">
+                    Müasir texnologiyalar və peşəkar komanda ilə sizə ən yaxşı IT həllərini təqdim edirik
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3 class="service-title">Kibertehlükəsizlik</h3>
+                    <p class="service-description">
+                        Şirkətinizi rəqəmsal təhdidlərdən qorumaq üçün ən son texnologiyalar və metodlar.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Firewall Quraşdırması</li>
+                        <li><span class="feature-dot"></span>Antivirus Həlləri</li>
+                        <li><span class="feature-dot"></span>DDoS Müdafiəsi</li>
+                        <li><span class="feature-dot"></span>Şəbəkə Təhlükəsizliyi</li>
+                    </ul>
+                    <button class="btn btn-ghost-cyber btn-sm btn-full">Ətraflı Öyrən</button>
+                    <div class="service-decoration"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h3 class="service-title">Təhlükəsizlik Auditi</h3>
+                    <p class="service-description">
+                        Sisteminizdəki zəiflikləri aşkar etmək və aradan qaldırmaq üçün hərtərəfli analiz.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Penetrasiya Testləri</li>
+                        <li><span class="feature-dot"></span>Zəiflik Qiymətləndirməsi</li>
+                        <li><span class="feature-dot"></span>Risk Analizi</li>
+                        <li><span class="feature-dot"></span>Uyğunluq Yoxlaması</li>
+                    </ul>
+                    <button class="btn btn-ghost-cyber btn-sm btn-full">Ətraflı Öyrən</button>
+                    <div class="service-decoration"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="settings"></i>
+                    </div>
+                    <h3 class="service-title">IT Konsultasiya</h3>
+                    <p class="service-description">
+                        Texnoloji infrastrukturunuzu optimallaşdırmaq üçün ekspert məsləhətləri.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Sistem Analizi</li>
+                        <li><span class="feature-dot"></span>Texnoloji Strategiya</li>
+                        <li><span class="feature-dot"></span>İnfrastruktur Planlaması</li>
+                        <li><span class="feature-dot"></span>Digital Transformasiya</li>
+                    </ul>
+                    <button class="btn btn-ghost-cyber btn-sm btn-full">Ətraflı Öyrən</button>
+                    <div class="service-decoration"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3 class="service-title">Təhlükəsizlik Təlimi</h3>
+                    <p class="service-description">
+                        Heyətinizi kibertəhlükəsizlik sahəsində məlumatlandırmaq və hazırlamaq.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Fərdi Təlimlər</li>
+                        <li><span class="feature-dot"></span>Əməliyyat Təhlükəsizliyi</li>
+                        <li><span class="feature-dot"></span>Phishing Müdafiəsi</li>
+                        <li><span class="feature-dot"></span>Təhlükəsizlik Mədəniyyəti</li>
+                    </ul>
+                    <button class="btn btn-ghost-cyber btn-sm btn-full">Ətraflı Öyrən</button>
+                    <div class="service-decoration"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3 class="service-title">Veb Təhlükəsizliyi</h3>
+                    <p class="service-description">
+                        Veb tətbiqlərinizi və onlayn platformalarınızı təhlükəsiz saxlamaq.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>SSL Sertifikatları</li>
+                        <li><span class="feature-dot"></span>Veb Application Firewall</li>
+                        <li><span class="feature-dot"></span>Content Security Policy</li>
+                        <li><span class="feature-dot"></span>HTTPS Məcburiyyəti</li>
+                    </ul>
+                    <button class="btn btn-ghost-cyber btn-sm btn-full">Ətraflı Öyrən</button>
+                    <div class="service-decoration"></div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="lock"></i>
+                    </div>
+                    <h3 class="service-title">Məlumat Qorunması</h3>
+                    <p class="service-description">
+                        Həssas məlumatlarınızı şifrələmək və qorumaq üçün peşəkar həllər.
+                    </p>
+                    <ul class="service-features">
+                        <li><span class="feature-dot"></span>Məlumat Şifrələməsi</li>
+                        <li><span class="feature-dot"></span>Backup Həlləri</li>
+                        <li><span class="feature-dot"></span>Access Control</li>
+                        <li><span class="feature-dot"></span>Data Loss Prevention</li>
+                    </ul>
+                    <button class="btn btn-ghost-cyber btn-sm btn-full">Ətraflı Öyrən</button>
+                    <div class="service-decoration"></div>
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="section-cta">
+                <button class="btn btn-cyber btn-lg">Bütün Xidmətləri Gör</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-overlay"></div>
+        
+        <div class="container">
+            <div class="about-content">
+                <!-- Content -->
+                <div class="about-text">
+                    <h2 class="section-title">
+                        <span class="title-normal">Secure Art</span>
+                        <br />
+                        <span class="title-neon purple">Haqqında</span>
+                    </h2>
+                    
+                    <div class="about-description">
+                        <p>
+                            Secure Art olaraq, rəqəmsal dünyada təhlükəsizliyin ən vacib prioritet olduğunu 
+                            bilirik. Bizim missiyamız müştərilərimizə ən yüksək səviyyədə IT təhlükəsizliyi 
+                            və texnoloji həllər təqdim etməkdir.
+                        </p>
+                        
+                        <p>
+                            Komandamız kibertehlükəsizlik, IT konsultasiya və sistem auditi sahələrində 
+                            dərin bilik və təcrübəyə malikdir. Müasir texnologiyalardan istifadə edərək, 
+                            hər bir layihəni fərdi yanaşma ilə həll edirik.
+                        </p>
+                        
+                        <p>
+                            Bizim üçün hər müştəri unikal və dəyərlidir. Bu səbəbdən hər bir layihəyə 
+                            maksimum diqqət və peşəkarlıqla yanaşaraq, ən yaxşı nəticələri əldə etməyə 
+                            çalışırıq.
+                        </p>
+                    </div>
+
+                    <!-- Mission statement -->
+                    <div class="mission-box">
+                        <h3 class="mission-title">Bizim Məqsədimiz</h3>
+                        <p class="mission-text">
+                            Rəqəmsal təhlükəsizliyi hər kəs üçün əlçatan etmək və kiber təhdidlərə qarşı 
+                            etibarlı müdafiə təmin etmək.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Müştəri</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">İl Təcrübə</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Dəstək</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Təhlükəsizlik</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values -->
+            <div class="values-section">
+                <h3 class="values-title">
+                    <span class="title-normal">Bizim </span>
+                    <span class="title-neon cyan">Dəyərlərimiz</span>
+                </h3>
+                
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <h4 class="value-title">Təhlükəsizlik</h4>
+                        <p class="value-description">
+                            Hər zaman ən yüksək təhlükəsizlik standartlarına riayət edirik
+                        </p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <h4 class="value-title">Dəqiqlik</h4>
+                        <p class="value-description">
+                            Hər bir detalı diqqətlə analiz edir və mükəmməl həllər təqdim edirik
+                        </p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h4 class="value-title">Sürət</h4>
+                        <p class="value-description">
+                            Müştəri ehtiyaclarına sürətli və effektiv cavab veririk
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-overlay"></div>
+        
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-normal">Bizimlə </span>
+                    <span class="title-neon cyan">Əlaqə</span>
+                </h2>
+                <p class="section-subtitle">
+                    Suallarınız var? Hər hansı bir proyekt haqqında məsləhət almaq istəyirsiniz? 
+                    Bizimlə əlaqə saxlayın!
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3 class="form-title">Mesaj Göndərin</h3>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Ad</label>
+                                <input type="text" class="form-input" placeholder="Adınızı daxil edin" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Soyad</label>
+                                <input type="text" class="form-input" placeholder="Soyadınızı daxil edin" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" placeholder="email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Telefon</label>
+                            <input type="tel" class="form-input" placeholder="+994 XX XXX XX XX">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Mövzu</label>
+                            <input type="text" class="form-input" placeholder="Mesajınızın mövzusu" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Mesaj</label>
+                            <textarea class="form-textarea" placeholder="Mesajınızı buraya yazın..." rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-cyber btn-lg btn-full">Mesaj Göndər</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-info-header">
+                        <h3 class="info-title">Əlaqə Məlumatları</h3>
+                        <p class="info-description">
+                            Peşəkar komandamız sizin suallarınıza cavab verməyə və layihələrinizə 
+                            dəstək olmağa hazırdır. Bizimlə əlaqə saxlayın və gəlin birlikdə 
+                            təhlükəsiz rəqəmsal gələcək quraq.
+                        </p>
+                    </div>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Email</h4>
+                                <a href="mailto:info@secureart.az" class="contact-value">info@secureart.az</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Telefon</h4>
+                                <a href="tel:+994XXXXXXXXX" class="contact-value">+994 XX XXX XX XX</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">Ünvan</h4>
+                                <span class="contact-value">Bakı, Azərbaycan</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">İş Saatları</h4>
+                                <span class="contact-value">24/7 Dəstək</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Contact -->
+                    <div class="quick-contact">
+                        <h4 class="quick-contact-title">Təcili Dəstək</h4>
+                        <p class="quick-contact-text">
+                            Təcili təhlükəsizlik məsələləri üçün 24/7 dəstək xəttimizlə əlaqə saxlayın.
+                        </p>
+                        <button class="btn btn-ghost-cyber btn-full">Təcili Əlaqə</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-overlay"></div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <!-- Company Info -->
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <div class="logo-icon">
+                                <i data-lucide="shield"></i>
+                            </div>
+                            <span class="logo-text">Secure Art</span>
+                        </div>
+                        <p class="footer-description">
+                            Rəqəmsal təhlükəsizlik və IT həlləri sahəsində aparıcı şirkət. 
+                            Müştərilərimizin təhlükəsizliyini təmin etmək bizim əsas missiyamızdır.
+                        </p>
+                        <div class="footer-social">
+                            <div class="social-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="social-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="social-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h3 class="footer-title cyan">Sürətli Keçidlər</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home" class="footer-link">Əsas Səhifə</a></li>
+                            <li><a href="#services" class="footer-link">Xidmətlər</a></li>
+                            <li><a href="#about" class="footer-link">Haqqımızda</a></li>
+                            <li><a href="#contact" class="footer-link">Əlaqə</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-section">
+                        <h3 class="footer-title purple">Xidmətlər</h3>
+                        <ul class="footer-links">
+                            <li><a href="#" class="footer-link">Kibertehlükəsizlik</a></li>
+                            <li><a href="#" class="footer-link">IT Konsultasiya</a></li>
+                            <li><a href="#" class="footer-link">Təhlükəsizlik Auditi</a></li>
+                            <li><a href="#" class="footer-link">Sistem Analizi</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-section">
+                        <h3 class="footer-title blue">Əlaqə</h3>
+                        <div class="footer-contact">
+                            <div class="footer-contact-item">
+                                <i data-lucide="mail"></i>
+                                <span>info@secureart.az</span>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i data-lucide="phone"></i>
+                                <span>+994 XX XXX XX XX</span>
+                            </div>
+                            <div class="footer-contact-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>Bakı, Azərbaycan</span>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-emergency">
+                            <p class="emergency-text">
+                                <span class="emergency-label">24/7 Dəstək:</span> Təcili vəziyyətlər üçün hər zaman əlçatanamz
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                        © 2024 Secure Art. Bütün hüquqlar qorunur.
+                    </p>
+                    <div class="footer-legal">
+                        <a href="#" class="legal-link">Məxfilik Siyasəti</a>
+                        <a href="#" class="legal-link">İstifadə Şərtləri</a>
+                        <a href="#" class="legal-link">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
