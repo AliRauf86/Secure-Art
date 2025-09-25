@@ -171,13 +171,18 @@ document.addEventListener('DOMContentLoaded', function() {
 const sectionButtons = document.querySelectorAll("button[data-target]");
 
 sectionButtons.forEach(btn => {
-    btn.addEventListener("click", function () {
-        const targetId = this.dataset.target; // data-target atributunu alır
+    btn.addEventListener("click", function (e) {
+        e.preventDefault(); // əlavə edirik ki, default heç bir şey olmasın
+
+        const targetId = this.getAttribute("data-target"); // data-target-dən id alır
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-            // Yumşaq keçid
-            targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+            const offsetTop = targetElement.offsetTop - 80; // mövcud header offset ilə eyni
+            window.scrollTo({
+                top: offsetTop,
+                behavior: "smooth"
+            });
         }
     });
 });
@@ -304,5 +309,6 @@ window.addEventListener('load', function() {
         init();
 
         animate();
+
 
 
