@@ -171,16 +171,16 @@ document.addEventListener('DOMContentLoaded', function() {
 const sectionButtons = document.querySelectorAll("button[data-target]");
 
 sectionButtons.forEach(btn => {
-    btn.addEventListener("click", function (e) {
-        e.preventDefault(); // əlavə edirik ki, default heç bir şey olmasın
+    btn.addEventListener("click", function(e) {
+        e.preventDefault();
 
-        const targetId = this.getAttribute("data-target"); // data-target-dən id alır
-        const targetElement = document.getElementById(targetId);
+        const targetId = this.dataset.target;
+        const targetSection = document.getElementById(targetId);
 
-        if (targetElement) {
-            const offsetTop = targetElement.offsetTop - 80; // mövcud header offset ilə eyni
+        if (targetSection) {
+            const offset = targetSection.offsetTop - 80;
             window.scrollTo({
-                top: offsetTop,
+                top: offset,
                 behavior: "smooth"
             });
         }
@@ -309,6 +309,7 @@ window.addEventListener('load', function() {
         init();
 
         animate();
+
 
 
 
