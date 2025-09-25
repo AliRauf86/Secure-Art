@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Smooth scrolling for buttons with data-target
+   // Button click funksionallığı: digər section-a keçid
 const sectionButtons = document.querySelectorAll("button[data-target]");
 
 sectionButtons.forEach(btn => {
@@ -176,11 +176,7 @@ sectionButtons.forEach(btn => {
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-            const offsetTop = targetElement.offsetTop - 80; // fixed header üçün
-            window.scrollTo({
-                top: offsetTop,
-                behavior: "smooth"
-            });
+            targetElement.scrollIntoView({ behavior: "smooth" }); // yumşaq keçid
         }
     });
 });
@@ -307,3 +303,4 @@ window.addEventListener('load', function() {
         init();
 
         animate();
+
