@@ -167,6 +167,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Smooth scrolling for buttons with data-target
+const sectionButtons = document.querySelectorAll("button[data-target]");
+
+sectionButtons.forEach(btn => {
+    btn.addEventListener("click", function () {
+        const targetId = this.getAttribute("data-target");
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const offsetTop = targetElement.offsetTop - 80; // fixed header üçün
+            window.scrollTo({
+                top: offsetTop,
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
     // Console welcome message
     console.log(`
     ╔═══════════════════════════════════════════╗
@@ -287,4 +305,5 @@ window.addEventListener('load', function() {
         });
 
         init();
+
         animate();
