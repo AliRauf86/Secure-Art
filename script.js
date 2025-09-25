@@ -167,16 +167,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-   // Button click funksionallığı: digər section-a keçid
+   // Button click üçün section keçidi
 const sectionButtons = document.querySelectorAll("button[data-target]");
 
 sectionButtons.forEach(btn => {
     btn.addEventListener("click", function () {
-        const targetId = this.getAttribute("data-target");
+        const targetId = this.dataset.target; // data-target atributunu alır
         const targetElement = document.getElementById(targetId);
 
         if (targetElement) {
-            targetElement.scrollIntoView({ behavior: "smooth" }); // yumşaq keçid
+            // Yumşaq keçid
+            targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     });
 });
@@ -303,4 +304,5 @@ window.addEventListener('load', function() {
         init();
 
         animate();
+
 
