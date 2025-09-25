@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
+});
  
 
     // Console welcome message
@@ -291,6 +291,7 @@ window.addEventListener('load', function() {
         init();
 
         animate();
+
 
 
 
