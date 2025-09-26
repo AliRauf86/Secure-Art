@@ -167,7 +167,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
  
+// Smooth scroll funksiyası (DOMContentLoaded içinə əlavə edin)
+function scrollToSection(sectionId) {
+    const targetElement = document.getElementById(sectionId);
+    if (targetElement) {
+        const offsetTop = targetElement.offsetTop - 80;
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    }
+}
 
+// Button listener (DOMContentLoaded içinə əlavə edin)
+const navButtons = document.querySelectorAll('[data-target]');
+navButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        scrollToSection(this.getAttribute('data-target'));
+    });
+});
+    
+    
     // Console welcome message
     console.log(`
     ╔═══════════════════════════════════════════╗
@@ -290,6 +311,7 @@ window.addEventListener('load', function() {
         init();
 
         animate();
+
 
 
 
