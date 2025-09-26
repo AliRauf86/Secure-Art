@@ -171,7 +171,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const sectionButtons = document.querySelectorAll('button[data-target]');
 sectionButtons.forEach(btn => {
     btn.addEventListener('click', function(e) {
-        e.preventDefault();
         const targetId = this.getAttribute('data-target');
         const targetSection = document.getElementById(targetId);
         if (targetSection) {
@@ -310,6 +309,7 @@ window.addEventListener('load', function() {
 
 
 });
+
 
 
 
