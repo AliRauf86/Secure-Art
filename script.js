@@ -234,7 +234,6 @@ window.addEventListener('load', function() {
 
 // Hero Canvas Animation
          const canvas = document.getElementById('hero-canvas');
-if (!canvas) return;
         const ctx = canvas.getContext('2d');
         let particles = [];
         
@@ -312,6 +311,7 @@ if (!canvas) return;
         init();
 
         animate();
+
 
 
 
