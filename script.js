@@ -178,7 +178,9 @@ function scrollToSection(sectionId) {
         });
     }
 }
-
+// Bu sətiri əlavə edin:
+window.scrollToSection = scrollToSection;
+    
 // Button listener (DOMContentLoaded içinə əlavə edin)
 const navButtons = document.querySelectorAll('[data-target]');
 navButtons.forEach(button => {
@@ -311,6 +313,7 @@ window.addEventListener('load', function() {
         init();
 
         animate();
+
 
 
 
