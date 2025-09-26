@@ -167,26 +167,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
  
-// Smooth scroll funksiyası (DOMContentLoaded içinə əlavə edin)
-function scrollToSection(sectionId) {
-    const targetElement = document.getElementById(sectionId);
-    if (targetElement) {
-        const offsetTop = targetElement.offsetTop - 80;
-        window.scrollTo({
-            top: offsetTop,
-            behavior: 'smooth'
+// Button click scroll
+    const sectionButtons = document.querySelectorAll('button[data-target]');
+    sectionButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('data-target');
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                const offset = targetSection.offsetTop - 80; // header offset
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth'
+                });
+            }
         });
-    }
-}
-
-// Button listener (DOMContentLoaded içinə əlavə edin)
-const navButtons = document.querySelectorAll('[data-target]');
-navButtons.forEach(button => {
-    button.addEventListener('click', function(e) {
-        e.preventDefault();
-        scrollToSection(this.getAttribute('data-target'));
     });
-});
     
     
     // Console welcome message
@@ -315,6 +311,7 @@ window.addEventListener('load', function() {
 
 
 });
+
 
 
 
