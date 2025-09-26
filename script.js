@@ -233,11 +233,7 @@ window.addEventListener('load', function() {
 });
 
 // Hero Canvas Animation
-document.addEventListener('DOMContentLoaded', function() {
-    const canvas = document.getElementById('hero-canvas');
-    if (!canvas) return; // Canvas yoxdursa, çıx
-    
-        const canvas = document.getElementById('hero-canvas');
+         const canvas = document.getElementById('hero-canvas');
         const ctx = canvas.getContext('2d');
         let particles = [];
         
@@ -315,6 +311,7 @@ document.addEventListener('DOMContentLoaded', function() {
         init();
 
         animate();
+
 
 
 
