@@ -205,7 +205,7 @@ navButtons.forEach(button => {
     ║    info@secureart.az                      ║
     ╚═══════════════════════════════════════════╝
     `);
-});
+
 
 // Service Worker Registration (optional for offline capability)
 if ('serviceWorker' in navigator) {
@@ -314,6 +314,7 @@ window.addEventListener('load', function() {
 
 
 
+});
 
 
 
