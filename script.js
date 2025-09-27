@@ -100,7 +100,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Zəhmət olmasa düzgün email ünvanı daxil edin.');
                 return;
             }
-            
+
+            fetch(this.action, {
+    method: 'POST',
+    body: formData
+});
             // Show success message (in real implementation, you would send to server)
             alert('Mesajınız uğurla göndərildi! Tezliklə sizinlə əlaqə saxlayacağıq.');
             this.reset();
@@ -318,6 +322,7 @@ window.addEventListener('load', function() {
 
 
 });
+
 
 
 
