@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            fetch(this.action, {
+            fetch('https://formspree.io/f/xanjrvlj', {
     method: 'POST',
     body: formData
 });
@@ -322,6 +322,7 @@ window.addEventListener('load', function() {
 
 
 });
+
 
 
 
