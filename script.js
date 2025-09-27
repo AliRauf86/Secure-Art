@@ -182,7 +182,16 @@ sectionButtons.forEach(btn => {
         }
     });
 });  
-    
+
+    // Navbar loqoya klikləmə ilə əsas səhifəyə yönləndirmə
+const navLogo = document.querySelector('.nav-logo');
+if (navLogo) {
+    navLogo.style.cursor = 'pointer'; // hover zamanı pointer göstərmək üçün
+    navLogo.addEventListener('click', () => {
+        window.location.href = 'index.html'; // əsas səhifəyə keçid
+    });
+}
+   
     // Console welcome message
     console.log(`
     ╔═══════════════════════════════════════════╗
@@ -309,6 +318,7 @@ window.addEventListener('load', function() {
 
 
 });
+
 
 
 
