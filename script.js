@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Contact form handling
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        
+        contactForm.addEventListener('submit', function(e) {
             
             // Basic form validation
             const formData = new FormData(this);
@@ -317,6 +317,7 @@ window.addEventListener('load', function() {
 
 
 });
+
 
 
 
